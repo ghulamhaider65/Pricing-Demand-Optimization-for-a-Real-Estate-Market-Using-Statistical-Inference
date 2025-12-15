@@ -1,1 +1,0 @@
-# Pricing analysis functions
