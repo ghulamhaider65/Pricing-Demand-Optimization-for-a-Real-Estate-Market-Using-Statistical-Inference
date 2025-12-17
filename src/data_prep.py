@@ -137,5 +137,4 @@ def scale_continuous_features(df, continuous_cols):
     return df_scaled, scaler
 
 
-# if not data.to_csv("../data/processed_ames_data.csv", index=False):
-#     print("Processed data saved successfully.")
+data.to_csv("data/processed_ames_data.csv", index=False)
