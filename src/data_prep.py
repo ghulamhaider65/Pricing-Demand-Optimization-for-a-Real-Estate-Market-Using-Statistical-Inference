@@ -4,7 +4,8 @@ import numpy as np
 import os
 
 # Data preparation functions
-# Get the project root directory (parent of src)
+# Get the project ro
+# ot directory (parent of src)
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_PATH = os.path.join(PROJECT_ROOT, 'data', 'train.csv')
 
@@ -135,4 +136,6 @@ def scale_continuous_features(df, continuous_cols):
     df_scaled[continuous_cols] = scaler.fit_transform(df[continuous_cols])
     return df_scaled, scaler
 
-data.to_csv("../data/processed_ames_data.csv", index=False)
+
+# if not data.to_csv("../data/processed_ames_data.csv", index=False):
+#     print("Processed data saved successfully.")
